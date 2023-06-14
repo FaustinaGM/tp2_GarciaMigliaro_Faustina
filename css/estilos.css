@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+nav,
+header,
+main
+ {width: 100vw;
+padding: 0 8.33vw;}
+
+section, video {width: 100%;}
+
+header {
+    height: 62vh;
+    text-align: center;
+}
+
+.mostrar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 19vh;
+    left: 0vw;
+    background-color: #2b50aa;
+    width: 100vw;
+    padding: 2vw;
+}
+
+nav {
+    color: white;
+    background-color: #2b50aa;
+    height: 19vh;
+    padding: 0 8.33vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav div {
+    width: 24%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a,
+nav h1,
+header h3,
+header h1 {
+
+    line-height: 125%;
+    vertical-align: top;
+    font-size: 30px; }
+   
+    nav h1 {
+    animation-name: movimiento;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+ }
+
+
+@keyframes movimiento {
+    from{font-size: 30px;}
+    to {font-size: 35px;}
+}
+
+header h3 {
+    color: #2b50aa;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+main  section {
+    justify-content: space-between;
+    display: flex;
+    }
+    
+main section div { width: 45.83%; margin-bottom: 30px;}
+section div img {width: 100%;}
+
+main  section {
+justify-content: space-between;
+display: flex;
+}
+
+nav h1 {
+    font-weight: 500;
+    margin: 0;
+}
+
+header h1 {
+    font-family: 'Comfortaa', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #2b50aa;
+    padding: 25px;
+ }
+
+header p,
+nav a,
+header a {
+    font-size: 20px;
+}
+
+nav a,
+header a {
+    color: white;
+}
+
+header a {
+    background-color: #2b50aa;
+    transition: background-color 1s 0s linear;
+}
+
+header:hover a {
+    background-color: #8a36d2; 
+}
+ 
+nav span {
+    display: none;
+}
+.icon-menu,
+.icon-icono-1,
+.icon-icono-2 {
+    font-size: 4vw;
+}
+
+.icon-menu:hover {
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+@media(max-width:992px) {
+    nav div {
+        width: 40%;
+    }
+}
+@media (max-width: 768px) {
+    nav div {
+        display: none;
+    }
+    nav span {
+        display: inline;
+    }
+
+
+}
